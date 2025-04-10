@@ -37,14 +37,14 @@ public class AppCommandLineRunner implements CommandLineRunner {
 
 
 
-//        printInfo("--- AppUserRepository ---");
-//        printInfo("Find by username (johndoe): " +
-//                appUserRepository.findByUsername("johndoe"));
-//        System.out.println("Find by registration date range: " +
-//                appUserRepository.findByRegDateBetween(LocalDate.now().minusDays(2), LocalDate.now()));
-//
-//        System.out.println("Find by details ID: " +
-//                appUserRepository.findByUserDetailsId(johnDetails.getId()));
+        printInfo("--- AppUserRepository ---");
+        printInfo("Find by username (johndoe): " +
+                appUserRepository.findByUsername("johndoe"));
+        printInfo("Find by registration date range: " +
+                appUserRepository.findByRegDateBetween(LocalDate.now().minusDays(2), LocalDate.now()));
+
+        printInfo("Find by details ID: " +
+                appUserRepository.findByUserDetails_Id(johnDetails.getId()));
 
 
     }
